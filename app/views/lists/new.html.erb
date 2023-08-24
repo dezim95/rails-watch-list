@@ -1,0 +1,19 @@
+<h1>New List</h1>
+
+<%= simple_form_for @list, html: { class: 'form-horizontal' } do |form| %>
+  <%= form.error_notification %>
+
+  <div class="form-group">
+    <div class="col-sm-10">
+      <%= form.input :name, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <div class="col-sm-offset-2 col-sm-10">
+      <%= form.button :submit, class: 'btn btn-primary' %>
+    </div>
+  </div>
+<% end %>
+
+<%= link_to 'Back', lists_path, class: 'btn btn-default' %>
