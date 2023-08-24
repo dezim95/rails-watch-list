@@ -2,7 +2,7 @@
 <ul>
   <% @lists.each do |list| %>
     <li>
-      <h2><%= list.name %></h2>
+      <%= link_to list.name, list_path(list) %>
     </li>
   <% end %>
 </ul>
